@@ -1,0 +1,44 @@
+.black{
+      background-color: #222222;
+}
+.red{
+  background-color: #ff4d4d;
+}
+.yellow{
+  background-color: #f7d842;
+}
+.blue{
+  background-color: #337ab7;
+}
+.green{
+  background-color: #98cb4a;
+}
+.baku-mutu{
+  background-color: #ff4d4d;
+}
+.text-white{
+  color: white;
+}
+.text-font-size{
+  font-size: 18px;
+  font-weight: bold;
+}
+.text-font-size-title2{
+  font-size: 22px;
+  font-weight: bold;
+}
+.text-center-position{
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+}
+.text-shadow{
+  text-shadow: 1px 1px #4b4c4a;
+}
+.text-shadow2{
+  text-shadow: 0.3px 0.3px #4b4c4a;
+}
+.hr-dash{
+  border-top: 1px dashed;
+}

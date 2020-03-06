@@ -1,0 +1,52 @@
+.hr-bottom
+	{
+		border-bottom:1pt solid black;
+	}
+.hr-bottom2
+	{
+	  border: 5px solid white;
+	  position: relative;
+	  margin-top: 18,4px;
+	}
+.color-td-black
+	{
+		background-color: #000000;
+	}
+.color-td-red
+	{
+		background-color: #ff1100;
+	}
+.color-td-yellow
+	{
+		background-color: #f2ff00;
+	}
+.color-td-blue
+	{
+		background-color: #0004ff;
+	}
+.color-td-green
+	{
+		background-color: #00ff1e;
+	}
+.canvasjs-chart-credit
+	{
+		display: none;
+	}
+.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  /*text-align: center;*/
+  background: #000
+}
+
+.centered {
+  position: absolute;
+  top: 90.5%;
+  left: 28.5%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
