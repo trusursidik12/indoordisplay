@@ -34,7 +34,7 @@ class Home extends CI_Controller {
 			}
 		}
 		
-		$this->load->view('stasiun/home_v', $data);
+		$this->load->view('stasiun/Home_v', $data);
 	}
 
 }
