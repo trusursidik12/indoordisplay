@@ -28,7 +28,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>GRESIK TEK 01</title>
+  <title><?= $idstasiun['nama'] ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -47,12 +47,19 @@
       <a href="<?= site_url('report/idstasiun/'.$idstasiun['id_stasiun']) ?>"><button>DOWNLOAD DATA</button></a>
     </div>
 
-  <div class="card p-3" style="margin-top: 70px;">
+  <div class="card p-3" style="margin-top: 40px;">
+    <div class="row">
+      <div class="col-sm">
+        <div class="text-center">
+          <h1><?= $idstasiun['nama'] ?></h1>
+        </div>
+      </div>
+    </div>
     <div class="d-flex">
-      <div class="col-sm-2 text-center" style="padding-top: 20px;">
+      <div class="col-sm-2 text-center" style="padding-top: 0px;">
         <table>
           <tr class="bg-dark">
-            <td> > 300 <br> BERBAHAYA</td>
+            <td height="60"> > 300 <br> BERBAHAYA</td>
           </tr>
           <tr class="bg-danger">
             <td height="80"> 200 - 299 <br> SANGAT TIDAK SEHAT</td>
@@ -164,9 +171,9 @@
   var indoor = new CanvasJS.Chart("chartAqmData", {
     // legend :{
       dataPointMaxWidth: 600,
-      title:{
-        text : "GRESIK TEK 01"
-      },
+      // title:{
+      //   text : "GRESIK TEK 01"
+      // },
     // },
     animationEnabled : true,
     colorSet: "greenShades",
