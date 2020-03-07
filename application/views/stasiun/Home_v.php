@@ -12,6 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 	</head>
 	<body>
+		<div style="z-index:9999;position:relative;width:100px;height:20px;background-color:white;left:320px;top:525px;"></div>
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
 				<div class="row">
