@@ -25,4 +25,16 @@ class Getdata_m extends CI_model
 		$query = $this->db->get('aqm_stasiun');
 		return $query->result_array();
 	}
+
+	public function getalldata($id_stasiuns = [])
+	{
+		$this->db->select('DISTINCT(waktu), id_stasiun, h2s, cs2, ws, wd, humidity, temperature, pressure, sr, rain_intensity');
+		if(count($id_stasiuns) > 0){
+			$this->db->where_in('id_stasiun', $id_stasiuns);
+		}
+		$this->db->group_by('waktu'); 
+		$this->db->order_by('waktu', 'DESC');
+		$query = $this->db->get('aqm_data');
+		return $query->result_array();
+	}
 }
