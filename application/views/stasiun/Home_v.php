@@ -28,7 +28,7 @@
 					</div>
 					<div class="d-flex">
 						<div class="col-sm-2 text-center" style="padding-top: 0px;">
-							<table>
+							<table width="100%">
 								<tr class="bg-dark">
 									<td height="60" style="font-size:12px;"> > 300 <br> BERBAHAYA</td>
 								</tr>
