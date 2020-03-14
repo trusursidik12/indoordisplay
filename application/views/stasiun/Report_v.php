@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Export Data</title>
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css') ?>">
   <link rel="stylesheet" href="<?= base_url('assets/plugins/datatables-buttons/css/buttons.dataTables.min.css') ?>">
@@ -11,7 +10,7 @@
 
   <div class="card">
     <div class="card-header">
-      <a href="<?= site_url()?>?group_id=<?= $_GET["group_id"]; ?>"><button>Lihat Chart</button></a>
+      <a href="<?= site_url()?>?apikey=<?= $_GET["apikey"]; ?>&workstation=<?= $_GET["workstation"]; ?>"><button>Lihat Chart</button></a>
     </div>
     <!-- /.card-header -->
     <div class="card-body">

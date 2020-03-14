@@ -14,7 +14,7 @@
 	<body>
 		<?php if($_GET["workstation"]): ?>
 			<div class="card-header">
-				<a href="<?= site_url()?>export?group_id=<?= $_GET["group_id"]; ?>"><button>Export Data</button></a>
+				<a href="<?= site_url()?>export?apikey=<?= $_GET["apikey"]; ?>&workstation=<?= $_GET["workstation"]; ?>"><button>Export Data</button></a>
 			</div>
 		<?php endif ?>
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
