@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 
 	public function index(){
-		$indoor_groups = $this->getdata_m->get_indoor_groups($_GET["group_id"]);
+		$indoor_groups = $this->getdata_m->get_indoor_groups($_GET["apikey"]);
 		foreach($indoor_groups as $key => $indoor_group){
 			$aqms = @$this->getdata_m->get_aqms($indoor_group["id_stasiun"])[0];
 			if(isset($aqms)){

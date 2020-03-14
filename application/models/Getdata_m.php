@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Getdata_m extends CI_model
 {
 
-	public function get_indoor_groups($id_group){
-		$this->db->where('id_group', $id_group);
+	public function get_indoor_groups($apikey){
+		$this->db->where('apikey', $apikey);
 		$query = $this->db->get('indoor_groups');
 		return $query->result_array();
 	}
