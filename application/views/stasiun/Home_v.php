@@ -12,9 +12,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 	</head>
 	<body>
-		<div class="card-header">
-			<a href="<?= site_url()?>export?group_id=<?= $_GET["group_id"]; ?>"><button>Export Data</button></a>
-		</div>
+		<?php if($_GET["workstation"]): ?>
+			<div class="card-header">
+				<a href="<?= site_url()?>export?group_id=<?= $_GET["group_id"]; ?>"><button>Export Data</button></a>
+			</div>
+		<?php endif ?>
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
