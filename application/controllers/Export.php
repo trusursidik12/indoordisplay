@@ -8,6 +8,6 @@ class Export extends CI_Controller {
 			$id_stasiuns[] = $indoor_group["id_stasiun"];
 		}
 		$data['alldata'] = $this->getdata_m->getalldata($id_stasiuns);
-		$this->load->view('stasiun/report_v', $data);
+		$this->load->view('stasiun/Report_v', $data);
 	}
 }

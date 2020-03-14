@@ -6,6 +6,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['report/idstasiun/(:any)']	= 'home/report_data/$1';
 $route['idstasiun/(:any)']			= 'home/id_stasiun/$1';
 
-$route['default_controller'] 		= 'Export';
+$route['default_controller'] 		= 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
