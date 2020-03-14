@@ -4,7 +4,7 @@
 		 <meta http-equiv="refresh" content="60">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>INDOOR DISPLAY</title>
+		<title>AQM DISPLAY</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css'); ?>">
@@ -15,20 +15,14 @@
 		<div class="card-header">
 			<a href="<?= site_url()?>export?group_id=<?= $_GET["group_id"]; ?>"><button>Export Data</button></a>
 		</div>
-		<div style="z-index:9999;position:relative;width:100px;height:20px;background-color:white;left:320px;top:525px;"></div>
+		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
-				<div class="row">
-					<div class="col-12" style="text-align:right;padding:20px 20px 0px 0px;">
-						Last Update : <?= $last_update; ?>
-					</div>
-				</div>
-		
-				<div class="card p-3" style="margin-top: 40px;">
+				<div class="card p-3">
 					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
-								<h1><?= $info[$id_stasiun]['nama'] ?></h1>
+								<h1 style="font-size:4vw;"><?= $info[$id_stasiun]['nama'] ?></h1>
 							</div>
 						</div>
 					</div>
@@ -36,19 +30,19 @@
 						<div class="col-sm-2 text-center" style="padding-top: 0px;">
 							<table>
 								<tr class="bg-dark">
-									<td height="60"> > 300 <br> BERBAHAYA</td>
+									<td height="60" style="font-size:12px;"> > 300 <br> BERBAHAYA</td>
 								</tr>
 								<tr class="bg-danger">
-									<td height="80"> 200 - 299 <br> SANGAT TIDAK SEHAT</td>
+									<td height="87" style="font-size:12px;"> 200 - 299 <br> SANGAT TIDAK SEHAT</td>
 								</tr>
 								<tr class="bg-warning">
-									<td height="80"> 101 - 199 <br> TIDAK SEHAT</td>
+									<td height="87" style="font-size:12px;"> 101 - 199 <br> TIDAK SEHAT</td>
 								</tr>
 								<tr class="bg-primary">
-									<td> 51 - 100 <br> SEDANG</td>
+									<td height="55" style="font-size:12px;"> 51 - 100 <br> SEDANG</td>
 								</tr>
 								<tr class="bg-success">
-									<td> 1 - 50 <br> BAIK</td>
+									<td height="55" style="font-size:12px;"> 1 - 50 <br> BAIK</td>
 								</tr>
 							</table>
 						</div>
@@ -59,6 +53,7 @@
 				
 					<div class="d-flex">
 						<?php foreach($weathers[$id_stasiun] as $key => $values) : ?>
+							<?php if(isset($values["info"]["label"])) : ?>
 								<div class="col-sm">
 									<div class="card text-center p-1 bg-info">
 										<h3 style="font-size: 14px;"><b><?= $values["info"]["label"]; ?></b></h3>
@@ -67,10 +62,16 @@
 										</div>
 									</div>
 								</div>
+							<?php endif ?>
 						<?php endforeach ?>
 					</div>
 			<?php endif ?>
 		<?php endforeach ?>
+		<div class="row">
+			<div class="col-12" style="text-align:right;padding:0px 20px 0px 0px;">
+				Last Update : <?= $last_update; ?>
+			</div>
+		</div>
 		<script type="text/javascript" src="<?= base_url('assets/dist/js/chartjs.js') ?>"></script>
 		<script>
 			window.onload = function () {
@@ -87,7 +88,7 @@
 							  maximum: 350
 							},
 							axisX:{
-							   labelFontSize: 32,
+							   labelFontSize: 20,
 							   labelFontWeight: "bold",
 							 },
 							data: [{
