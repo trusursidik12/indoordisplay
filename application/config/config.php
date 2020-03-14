@@ -38,12 +38,12 @@ $config['base_url'] = 'http://ispumaps.id/indoordisplay/';
 */
 $config['index_page'] = '';
 
-$link = "http" .((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "") . "://";
+/* $link = "http" .((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "") . "://";
 $server = isset($_SERVER['HTTP_HOST']) ?$_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
 $config['base_url']  = $link . $server;
 //$config['base_url'] .= dirname($_SERVER['SCRIPT_NAME']).'/';
 $dir=preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])).'/';
-$config['base_url'] .= $dir;
+$config['base_url'] .= $dir; */
 
 /*
 |--------------------------------------------------------------------------
