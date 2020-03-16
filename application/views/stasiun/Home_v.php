@@ -29,6 +29,7 @@
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -10px;">
+						<div class="row">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
@@ -50,8 +51,7 @@
 						</div>
 						<div class="col-sm-9">
 							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>
-							<br>
-							<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
+						</div>
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -185px;">
