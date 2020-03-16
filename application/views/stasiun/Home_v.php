@@ -21,13 +21,38 @@
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
 				<div class="p-1">
+					<div class="d-flex">
+						<div class="col-sm">
+							<div class="text-center">
+								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
+							</div>
+						</div>
+					</div>
 					<div class="d-flex" style="margin-top: -10px;">
 						<div class="row">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
-							
+							<table width="100%">
+								<tr class="bg-dark">
+									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
+								</tr>
+								<tr class="bg-danger">
+									<td height="45" style="font-size:10px;"> (200 - 299)<br>SANGAT TIDAK SEHAT</td>
+								</tr>
+								<tr class="bg-warning">
+									<td height="42" style="font-size:10px;"> (101 - 199)<br>TIDAK SEHAT</td>
+								</tr>
+								<tr class="bg-primary">
+									<td height="23" style="font-size:10px;"> (51 - 100) SEDANG</td>
+								</tr>
+								<tr class="bg-success">
+									<td height="23" style="font-size:10px;"> (1 - 50) BAIK</td>
+								</tr>
+							</table>
 						</div>
 						<div class="col-sm-9">
 							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>
+							<br>
+							<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
 						</div>
 						</div>
 					</div>
@@ -56,6 +81,7 @@
 						CanvasJS.addColorSet("greenShades",["#00eaff"]);
 						var indoor_<?= $id_stasiun; ?> = new CanvasJS.Chart("chartAqmData_<?= $id_stasiun; ?>", {
 							height:200,
+							width:380,
 							dataPointMaxWidth: 600,
 							animationEnabled : true,
 							colorSet: "greenShades",
