@@ -64,7 +64,7 @@
 							<?php endif ?>
 						<?php endforeach ?>
 					</div>
-					<div class="footer">
+					<div class="footer fixed-bottom">
 						<div class="row">
 							<div class="col">
 								<p class="text-right" style="font-size:18px;">Last Update : <?= $last_update; ?></p>
