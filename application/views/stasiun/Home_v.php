@@ -67,7 +67,7 @@
 					<div class="footer fixed-bottom">
 						<div class="row">
 							<div class="col">
-								<p class="text-right" style="font-size:18px; margin-left: 10px;">Last Update : <?= $last_update; ?></p>
+								<p class="text-right" style="font-size:18px; margin-right: 10px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
