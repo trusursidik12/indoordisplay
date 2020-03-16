@@ -21,13 +21,6 @@
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
 				<div class="p-1">
-					<div class="d-flex">
-						<div class="col-sm">
-							<div class="text-center">
-								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
-							</div>
-						</div>
-					</div>
 					<div class="d-flex" style="margin-top: -10px;">
 						<div class="row">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
