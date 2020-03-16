@@ -67,9 +67,9 @@
 						<?php endforeach ?>
 					</div>
 					<div class="d-flex">
-						<div class="col-sm">
-							<div class="text-center">
-								<p class="text-center" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
+						<div class="row">
+							<div class="text-right">
+								<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
