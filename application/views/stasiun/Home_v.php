@@ -64,6 +64,11 @@
 							<?php endif ?>
 						<?php endforeach ?>
 					</div>
+					<div class="row">
+						<div class="col">
+							<p class="text-center" style="font-size:18px;">Last Update : <?= $last_update; ?></p>
+						</div>
+					</div>
 				</div>
 			<?php endif ?>
 		<?php endforeach ?>
