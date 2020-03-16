@@ -50,7 +50,7 @@
 							</table>
 						</div>
 						<div class="col-sm-9">
-							<div id="chartAqmData_<?= $id_stasiun; ?>" style="width: 100%;"></div>        
+							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>        
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -185px;">
