@@ -25,7 +25,7 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
-								<p style="font-size: 12px; margin-top: -35px; margin-left: 440px;">Last Update : <?= $last_update; ?></p>
+								<!-- <p style="font-size: 12px; margin-top: -35px; margin-left: 440px;">Last Update : <?= $last_update; ?></p> -->
 							</div>
 						</div>
 					</div>
