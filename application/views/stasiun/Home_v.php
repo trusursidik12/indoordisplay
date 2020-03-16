@@ -25,7 +25,7 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
-								<p style="font-size: 12px; margin-top: -20px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
+								<p class="text-right" style="font-size: 12px; margin-top: -20px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
@@ -66,13 +66,6 @@
 								</div>
 							<?php endif ?>
 						<?php endforeach ?>
-					</div>
-					<div class="row">
-						<div class="col-sm">
-							<div class="text-center">
-								<p class="text-right" style="font-size: 12px; margin-top: -20px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
-							</div>
-						</div>
 					</div>
 				</div>
 			<?php endif ?>
