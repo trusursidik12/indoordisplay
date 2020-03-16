@@ -66,8 +66,12 @@
 							<?php endif ?>
 						<?php endforeach ?>
 					</div>
-					<div class="d-flex footer fixed-bottom bg-white">
-						<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
+					<div class="d-flex">
+						<div class="col-sm">
+							<div class="text-right">
+								<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			<?php endif ?>
