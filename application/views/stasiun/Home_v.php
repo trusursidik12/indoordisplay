@@ -25,7 +25,7 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
-								<p style="font-size: 12px; margin-top: -30px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
+								<p style="font-size: 12px; margin-top: -25px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
@@ -42,10 +42,10 @@
 									<td height="42" style="font-size:10px;"> (101 - 199)<br>TIDAK SEHAT</td>
 								</tr>
 								<tr class="bg-primary">
-									<td height="25" style="font-size:10px;"> (51 - 100) SEDANG</td>
+									<td height="23" style="font-size:10px;"> (51 - 100) SEDANG</td>
 								</tr>
 								<tr class="bg-success">
-									<td height="25" style="font-size:10px;"> (1 - 50) BAIK</td>
+									<td height="23" style="font-size:10px;"> (1 - 50) BAIK</td>
 								</tr>
 							</table>
 						</div>
