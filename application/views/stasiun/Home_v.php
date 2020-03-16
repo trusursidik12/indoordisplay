@@ -25,7 +25,7 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
-								<p style="font-size: 12px; margin-top: -35px;">Last Update : <?= $last_update; ?></p>
+								<p style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
@@ -67,6 +67,7 @@
 							<?php endif ?>
 						<?php endforeach ?>
 					</div>
+				</div>
 			<?php endif ?>
 		<?php endforeach ?>
 		<script type="text/javascript" src="<?= base_url('assets/dist/js/chartjs.js') ?>"></script>
