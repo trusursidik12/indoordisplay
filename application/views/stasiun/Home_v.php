@@ -23,9 +23,7 @@
 				<div class="container p-3">
 					<div class="row">
 						<div class="col">
-							<div class="text-center">
-								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?></p>
-							</div>
+							<p class="text-center" style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?></p>
 						</div>
 					</div>
 					<div class="row" style="margin-top: -10px;">
