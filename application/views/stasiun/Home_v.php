@@ -20,7 +20,7 @@
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
-				<div class="p-1">
+				<div class="p-3">
 					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
@@ -66,6 +66,13 @@
 								</div>
 							<?php endif ?>
 						<?php endforeach ?>
+					</div>
+					<div class="row">
+						<div class="col-sm">
+							<div class="text-center">
+								<p class="text-right" style="font-size: 12px; margin-top: -20px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			<?php endif ?>
