@@ -21,11 +21,10 @@
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
 				<div class="card p-3">
-					<div class="row">
+					<div class="d-flex">
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
-								<p style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
