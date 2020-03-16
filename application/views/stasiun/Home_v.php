@@ -20,7 +20,7 @@
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
-				<div class="p-3">
+				<div class="p-1">
 					<div class="d-flex">
 						<div class="col-sm">
 							<div class="text-center">
@@ -77,7 +77,7 @@
 						CanvasJS.addColorSet("greenShades",["#00eaff"]);
 						var indoor_<?= $id_stasiun; ?> = new CanvasJS.Chart("chartAqmData_<?= $id_stasiun; ?>", {
 							height:200,
-							width:350,
+							width:380,
 							dataPointMaxWidth: 600,
 							animationEnabled : true,
 							colorSet: "greenShades",
