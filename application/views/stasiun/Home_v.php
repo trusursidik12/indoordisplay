@@ -29,7 +29,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="d-flex" style="margin-top: -10px;">
+					<div class="d-flex" style="margin-top: -20px;">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
