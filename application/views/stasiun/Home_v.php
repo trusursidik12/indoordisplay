@@ -24,27 +24,28 @@
 					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
-								<h1 style="font-size:4vw;"><?= $info[$id_stasiun]['nama'] ?></h1>
+								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
+								<p style="font-size: 12px; margin-top: -35px; margin-left: 440px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
-					<div class="d-flex">
+					<div class="d-flex" style="margin-top: -15px;">
 						<div class="col-sm-2 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
-									<td height="60" style="font-size:12px;"> > 300 <br> BERBAHAYA</td>
+									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
 								</tr>
 								<tr class="bg-danger">
-									<td height="87" style="font-size:12px;"> 200 - 299 <br> SANGAT TIDAK SEHAT</td>
+									<td height="45" style="font-size:10px;"> (200 - 299)<br>SANGAT TIDAK SEHAT</td>
 								</tr>
 								<tr class="bg-warning">
-									<td height="87" style="font-size:12px;"> 101 - 199 <br> TIDAK SEHAT</td>
+									<td height="42" style="font-size:10px;"> (101 - 199)<br>TIDAK SEHAT</td>
 								</tr>
 								<tr class="bg-primary">
-									<td height="55" style="font-size:12px;"> 51 - 100 <br> SEDANG</td>
+									<td height="25" style="font-size:10px;"> (51 - 100) SEDANG</td>
 								</tr>
 								<tr class="bg-success">
-									<td height="55" style="font-size:12px;"> 1 - 50 <br> BAIK</td>
+									<td height="25" style="font-size:10px;"> (1 - 50) BAIK</td>
 								</tr>
 							</table>
 						</div>
@@ -52,15 +53,14 @@
 							<div id="chartAqmData_<?= $id_stasiun; ?>" style="height: 370px; width: 100%;"></div>        
 						</div>
 					</div>
-				
-					<div class="d-flex">
+					<div class="d-flex" style="margin-top: -185px;">
 						<?php foreach($weathers[$id_stasiun] as $key => $values) : ?>
 							<?php if(isset($values["info"]["label"])) : ?>
-								<div class="col-sm">
-									<div class="card text-center p-1 bg-info">
-										<h3 style="font-size: 14px;"><b><?= $values["info"]["label"]; ?></b></h3>
-										<div class="card m-1 bg-info">
-											<h1><b><?= $values["value"]; ?> <?= $values["info"]["unit"]; ?></b></h1>
+								<div class="col-sm bg-white">
+									<div class="text-center p-1" style="margin-top: 10px;">
+										<h3 style="font-size: 10px;"><b><?= $values["info"]["label"]; ?></b></h3>
+										<div class="card bg-info">
+											<h4><b><?= $values["value"]; ?> <?= $values["info"]["unit"]; ?></b></h4>
 										</div>
 									</div>
 								</div>
@@ -69,11 +69,6 @@
 					</div>
 			<?php endif ?>
 		<?php endforeach ?>
-		<div class="row">
-			<div class="col-12" style="text-align:right;padding:0px 20px 0px 0px;">
-				Last Update : <?= $last_update; ?>
-			</div>
-		</div>
 		<script type="text/javascript" src="<?= base_url('assets/dist/js/chartjs.js') ?>"></script>
 		<script>
 			window.onload = function () {
@@ -81,6 +76,7 @@
 					<?php if(isset($aqm) > 0) : ?>
 						CanvasJS.addColorSet("greenShades",["#00eaff"]);
 						var indoor_<?= $id_stasiun; ?> = new CanvasJS.Chart("chartAqmData_<?= $id_stasiun; ?>", {
+							height:200,
 							dataPointMaxWidth: 600,
 							animationEnabled : true,
 							colorSet: "greenShades",
