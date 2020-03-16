@@ -25,12 +25,12 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
-								<p style="font-size: 12px; margin-top: -35px; margin-left: 440px;">Last Update : <?= $last_update; ?></p>
+								<p style="font-size: 12px; margin-top: -35px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -15px;">
-						<div class="col-sm-2 text-center" style="padding-top: 0px;">
+						<div class="col-sm-4 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
 									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
@@ -49,7 +49,7 @@
 								</tr>
 							</table>
 						</div>
-						<div class="col-sm-10">
+						<div class="col-sm-8">
 							<div id="chartAqmData_<?= $id_stasiun; ?>" style="height: 370px; width: 100%;"></div>        
 						</div>
 					</div>
