@@ -20,8 +20,13 @@
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
-				<div class="p-3">
-					<div class="d-flex" style="margin-top: -15px;">
+				<div class="p-3" width="100%" >
+					<div class="d-flex">
+						<div class="text-center">
+							<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
+						</div>
+					</div>
+					<div class="d-flex" width="100%" style="margin-top: -15px;">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
