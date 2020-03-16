@@ -24,7 +24,7 @@
 					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
-								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?>&nbsp;</p>
+								<p style="font-size:18px;"><?= $info[$id_stasiun]['nama'] ?></p>
 							</div>
 						</div>
 					</div>
@@ -49,7 +49,7 @@
 							</table>
 						</div>
 						<div class="col-sm-10">
-							<div id="chartAqmData_<?= $id_stasiun; ?>" style="width: 100%;"></div>        
+							<div id="chartAqmData_<?= $id_stasiun; ?>" style="height: 370px; width: 100%;"></div>        
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -185px;">
