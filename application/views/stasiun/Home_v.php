@@ -21,7 +21,7 @@
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
 				<div class="p-1">
-					<div class="drow">
+					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
@@ -29,7 +29,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="drow" style="margin-top: -10px;">
+					<div class="row" style="margin-top: -10px;">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
@@ -53,7 +53,7 @@
 							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>        
 						</div>
 					</div>
-					<div class="drow" style="margin-top: -185px;">
+					<div class="row" style="margin-top: -185px;">
 						<?php foreach($weathers[$id_stasiun] as $key => $values) : ?>
 							<?php if(isset($values["info"]["label"])) : ?>
 								<div class="col-sm bg-white">
