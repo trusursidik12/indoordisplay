@@ -24,23 +24,7 @@
 					<div class="d-flex" style="margin-top: -10px;">
 						<div class="row">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
-							<table width="100%">
-								<tr class="bg-dark">
-									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
-								</tr>
-								<tr class="bg-danger">
-									<td height="45" style="font-size:10px;"> (200 - 299)<br>SANGAT TIDAK SEHAT</td>
-								</tr>
-								<tr class="bg-warning">
-									<td height="42" style="font-size:10px;"> (101 - 199)<br>TIDAK SEHAT</td>
-								</tr>
-								<tr class="bg-primary">
-									<td height="23" style="font-size:10px;"> (51 - 100) SEDANG</td>
-								</tr>
-								<tr class="bg-success">
-									<td height="23" style="font-size:10px;"> (1 - 50) BAIK</td>
-								</tr>
-							</table>
+							
 						</div>
 						<div class="col-sm-9">
 							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>
