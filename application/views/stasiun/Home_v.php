@@ -79,7 +79,6 @@
 						CanvasJS.addColorSet("greenShades",["#00eaff"]);
 						var indoor_<?= $id_stasiun; ?> = new CanvasJS.Chart("chartAqmData_<?= $id_stasiun; ?>", {
 							height:200,
-							width:380,
 							dataPointMaxWidth: 600,
 							animationEnabled : true,
 							colorSet: "greenShades",
