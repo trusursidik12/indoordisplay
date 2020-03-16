@@ -20,7 +20,7 @@
 		<!--div style="z-index:9999;position:absolute;width:100px;height:20px;background-color:white;left:320px;top:525px;border:1px solid red"></div-->
 		<?php foreach($aqms as $id_stasiun => $aqm) : ?>
 			<?php if(isset($aqm) > 0) : ?>
-				<div class="p-3">
+				<div class="container p-3">
 					<div class="row">
 						<div class="col-sm">
 							<div class="text-center">
@@ -28,8 +28,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="d-flex" style="margin-top: -10px;">
-						<div class="mr-auto p-2 text-center" style="padding-top: 0px;">
+					<div class="row" style="margin-top: -10px;">
+						<div class="col-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
 									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
@@ -48,7 +48,7 @@
 								</tr>
 							</table>
 						</div>
-						<div class="p-2">
+						<div class="col-9">
 							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>        
 						</div>
 					</div>
