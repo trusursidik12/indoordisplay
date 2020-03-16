@@ -30,7 +30,7 @@
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -15px;">
-						<div class="col-sm-4 text-center" style="padding-top: 0px;">
+						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
 									<td height="30" style="font-size:10px;"> ( > 300) BERBAHAYA</td>
@@ -49,8 +49,8 @@
 								</tr>
 							</table>
 						</div>
-						<div class="col-sm-8">
-							<div id="chartAqmData_<?= $id_stasiun; ?>" style="height: 370px; width: 100%;"></div>        
+						<div class="col-sm-9">
+							<div id="chartAqmData_<?= $id_stasiun; ?>" style="width: 100%;"></div>        
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -185px;">
