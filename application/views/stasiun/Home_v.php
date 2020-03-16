@@ -25,11 +25,10 @@
 						<div class="col-sm">
 							<div class="text-center">
 								<p style="font-size:18px; margin-left: -90px"><?= $info[$id_stasiun]['nama'] ?></p>
-								<p style="font-size: 12px; margin-top: -20px; margin-left: 220px;">Last Update : <?= $last_update; ?></p>
 							</div>
 						</div>
 					</div>
-					<div class="d-flex" style="margin-top: -20px;">
+					<div class="d-flex" style="margin-top: -10px;">
 						<div class="col-sm-3 text-center" style="padding-top: 0px;">
 							<table width="100%">
 								<tr class="bg-dark">
