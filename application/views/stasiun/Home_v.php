@@ -49,7 +49,9 @@
 							</table>
 						</div>
 						<div class="col-sm-9">
-							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>        
+							<div id="chartAqmData_<?= $id_stasiun; ?>"></div>
+							<br>
+							<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
 						</div>
 					</div>
 					<div class="d-flex" style="margin-top: -185px;">
@@ -65,13 +67,6 @@
 								</div>
 							<?php endif ?>
 						<?php endforeach ?>
-					</div>
-					<div class="d-flex">
-						<div class="row">
-							<div class="text-right">
-								<p class="text-right" style="font-size: 12px;">Last Update : <?= $last_update; ?></p>
-							</div>
-						</div>
 					</div>
 				</div>
 			<?php endif ?>
