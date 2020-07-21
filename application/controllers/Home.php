@@ -19,7 +19,8 @@ class Home extends CI_Controller {
 				foreach($params as $param){
 					$label = strtoupper($param);
 					if($param == "pm25") $label = "PM2.5";
-					$data["charts"][$indoor_group["id_stasiun"]][] = ["label" => $label, "y" => @$aqms[$param]*1 ];				
+					$aqms_ispu[$param] = $this->to_ispu($param,$aqms[$param]);
+					$data["charts"][$indoor_group["id_stasiun"]][] = ["label" => $label, "y" => @$aqms_ispu[$param]*1 ];				
 				}
 				$weather_params = explode(",",@explode("|",$indoor_group["params"])[1]);
 				foreach($weather_params as $param){
@@ -35,6 +36,22 @@ class Home extends CI_Controller {
 		}
 		
 		$this->load->view('stasiun/Home_v', $data);
+	}
+	
+	public function to_ispu($param,$ug){
+		global $db;
+		$ug = $ug * 1;
+		if($ug > 0){
+			$result = $db->query("SELECT * FROM categories WHERE param='$param' AND '".$ug."' BETWEEN ambien_a AND ambien_b");
+			if($db->affected_rows > 0){
+				$category = $result->fetch_object();
+				return round((($category->ispu_b - $category->ispu_a)/($category->ambien_b - $category->ambien_a) * ($ug - $category->ambien_a)) + $category->ispu_a,0);
+			} else {
+				return 0;
+			}
+		} else {
+			return 0;
+		}
 	}
 
 }
